@@ -68,7 +68,7 @@ export default function ColorPalete(){
                 <form  style={{display:'flex'}} onSubmit={handleSubmit}>
                     <input type="color" name="colorTag" value={color} onChange={handleColor}/>
                     <input type="text" placeholder={color}  onChange={handleText}/>
-                    <button type="submit" >Submit</button>
+                    <button type="submit" style={{backgroundColor:color}} >Submit</button>
                     <ToastContainer
                         position="top-center"
                         autoClose={5000}
